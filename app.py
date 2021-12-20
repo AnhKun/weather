@@ -36,7 +36,6 @@ def index_get():
             'icon' : r['weather'][0]['icon'],
         }
         weather_data.append(weather)
-        print(weather)
 
     return render_template('weather.html', weather_data=weather_data)
 
